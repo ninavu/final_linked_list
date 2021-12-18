@@ -1,26 +1,13 @@
 
-#include "linked_list.h"
+//#include "linked_list.h"
 #include <stdexcept>
-//#include <iostream>
+#include <iostream>
 
-
+using namespace std;
 
 template <typename T> 
 void LinkedList<T>::push_back(T item){
-	Node<T> *n = new Node<T>;
-	n->data = item;
-	numItems++;
-	
-
-	if(head == nullptr){
-		head = n;
-		tail = n;
-		return;
-	}
-
-	tail->next = n;
-	n->prev = tail;
-	tail = n;	
+	return;
 }
 
 
